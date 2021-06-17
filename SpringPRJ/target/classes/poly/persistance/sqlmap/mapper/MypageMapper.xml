@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="poly.persistance.mapper.IMypageMapper">
+	<select id="getUserPageInfo" parameterType="String"
+		resultType="UserDTO">
+		SELECT
+			USERNAME as userName, <!-- DTO이름이랑 통일시키기 위함(별칭임) -->
+			USERID as userId,
+			USEREMAIL as userEmail,
+			USERTEL as userTel
+		FROM
+			USER_INFO
+		WHERE
+			USERID = #{userId}
+	</select>
+
+	<update id="updateUserPageInfo" parameterType="UserDTO">
+		UPDATE
+			USER_INFO
+		SET
+			USERNAME = #{userName},
+			USEREMAIL = #{userEmail},
+			USERTEL = #{userTel}
+		WHERE
+			USERID = #{userId}
+	</update>
+	
+	<update id="updateUserPwInfo" parameterType="UserDTO">
+		UPDATE
+			USER_INFO
+		SET
+			USERPASSWORD = #{userPassword}
+		WHERE
+			USERID = #{userId}
+	</update>
+
+	<delete id="deleteUserPageInfo" parameterType="String">
+		DELETE FROM
+			USER_INFO
+		WHERE
+			USERID = #{userId}
+	</delete>
+
+	<select id="getMPageInfo" parameterType="String"
+		resultType="UserDTO">
+		SELECT
+			USERNAME as userName, 
+			USERID as userId,
+			USEREMAIL as userEmail
+		FROM
+			USER_INFO
+		WHERE
+			USERID = #{userId}
+	</select>
+	
+	<update id="updateMPageInfo" parameterType="UserDTO">
+		UPDATE
+			USER_INFO
+		SET
+			USERNAME = #{userName},
+			USEREMAIL = #{userEmail},
+			USERTEL = #{userTel}
+		WHERE
+			USERID = #{userId}
+	</update>
+	
+	<update id="updateMPwInfo" parameterType="UserDTO">
+		UPDATE
+			USER_INFO
+		SET
+			USERPASSWORD = #{userPassword}
+		WHERE
+			USERID = #{userId}
+	</update>
+	
+	<select id="getUserList"
+		resultType="UserDTO">
+		SELECT
+			USERNAME as userName, 
+			USERID as userId,
+			USEREMAIL as userEmail,
+			USERTEL as userTel
+		FROM
+			USER_INFO
+	</select>
+	
+	<delete id="deleteUser" parameterType="string">
+		DELETE FROM
+			USER_INFO
+		WHERE
+			USERID = #{user_id}
+	</delete>
+
+</mapper>

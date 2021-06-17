@@ -1,0 +1,205 @@
+
+.bg_color{
+    background-color: #f4f6f9;
+}
+.text_left {
+	text-align:left!important;
+}
+.inner_box{
+    padding: 1em;
+}
+.inner_text{
+    font-size: 1em;
+    font-family: Arial;
+    color: #1159a2;
+}
+.error_text{
+    font-size: 0.8em;
+    font-family: Arial;
+    color: red;
+    display: none;
+}
+.title_text{
+    font-size: 2em;
+    font-weight: bold;
+    color: #0b2f53;
+    margin-bottom: 0.5em;
+}
+.sub_title_text{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #8b8e91;
+    margin-bottom: 0.25em;
+}
+
+.form_control {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+	display:block;
+	width:100%;
+	height:calc(1.5em+.75rem+2px);
+	font-size:1rem;
+	font-weight:400;
+	color:#6e707e;
+	background-clip:padding-box;
+	border:1px solid #d1d3e2;
+	border-radius:.35rem;
+	-webkit-transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+	transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+	transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out
+}
+@media (prefers-reduced-motion:reduce) {
+	.form_control {
+		-webkit-transition:none;
+		transition:none
+	}
+    
+}
+@media (max-width:575px){
+    .form_control::-webkit-input-placeholder {
+        font-size: 60%;
+    }
+    .form_control::-moz-placeholder { 
+        font-size: 60%;
+    }
+    .form_control:-ms-input-placeholder {
+        font-size: 60%; 
+    }
+    .form_control:-moz-placeholder {
+        font-size: 60%; 
+    }
+    .form_control::placeholder { 
+        font-size: 60%; 
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .form_control::-webkit-input-placeholder {
+        font-size: 80%;
+    }
+    .form_control::-moz-placeholder { 
+        font-size: 80%;
+    }
+    .form_control:-ms-input-placeholder {
+        font-size: 80%; 
+    }
+    .form_control:-moz-placeholder {
+        font-size: 80%; 
+    }
+    .form_control::placeholder { 
+        font-size: 80%; 
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    .form_control::-webkit-input-placeholder {
+        font-size: 80%;
+    }
+    .form_control::-moz-placeholder { 
+        font-size: 80%;
+    }
+    .form_control:-ms-input-placeholder {
+        font-size: 80%; 
+    }
+    .form_control:-moz-placeholder {
+        font-size: 80%; 
+    }
+    .form_control::placeholder { 
+        font-size: 80%; 
+    }
+}
+.form_group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+.form_control::-ms-expand {
+	background-color:transparent;
+	border:0
+}
+.form_control:focus {
+	color:#6e707e;
+	background-color:#fff;
+	border-color:#bac8f3;
+	outline:0;
+	-webkit-box-shadow:0 0 0 .2rem rgba(78,115,223,.25);
+	box-shadow:0 0 0 .2rem rgba(78,115,223,.25)
+}
+.form_control::-webkit-input-placeholder {
+	color:#858796;
+	opacity:1
+}
+.form_control::-moz-placeholder {
+	color:#858796;
+	opacity:1
+}
+.form_control:-ms-input-placeholder {
+	color:#858796;
+	opacity:1
+}
+.form_control::-ms-input-placeholder {
+	color:#858796;
+	opacity:1
+}
+.form_control::placeholder {
+	color:#858796;
+	opacity:1
+}
+.form_control:disabled,.form-control[readonly] {
+	background-color:#eaecf4;
+	opacity:1
+}
+select.form_control:focus::-ms-value {
+	color:#6e707e;
+	background-color:#fff
+}
+select.form_control[multiple],select.form_control[size] {
+	height:auto
+}
+
+
+form.user .form_control_user {
+	font-size:1rem;
+	border-radius:0.5rem;
+	padding:0.5rem 0.5rem
+}
+
+@media(max-width: 450px){
+    body{
+        font-size: 75%;
+    }
+    .form_control::-webkit-input-placeholder {
+        font-size: 25%;
+    }
+    .form_control::-moz-placeholder { 
+        font-size: 25%;
+    }
+    .form_control:-ms-input-placeholder {
+        font-size: 25%; 
+    }
+    .form_control:-moz-placeholder {
+        font-size: 25%; 
+    }
+    .form_control::placeholder { 
+        font-size: 25%; 
+    }
+    .form_control{
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+    }
+}
+.btn-el{
+    background-color: #2f3333;
+    color: #ffffff;
+}

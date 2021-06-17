@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="poly.persistance.mapper.IMainMapper">
+	<select id="idCheck" parameterType="String" resultType="int">
+      SELECT 
+      	  COUNT(*) 
+      FROM 
+          USER_INFO
+      WHERE
+          USERID = #{userId}
+	</select>
+	
+	<insert id="userRegProc" parameterType="UserDTO" >
+		INSERT INTO USER_INFO
+		(
+			USERID,
+			USERPASSWORD,
+			USERNAME,
+			USERTEL,
+			USER_RIGHTS,
+			REGDATE,
+			REGID,
+			UPDDATE,
+			UPDID,
+			USEREMAIL,
+			USERGEN,
+			USERDATE
+		)
+		VALUES
+		(
+			#{userId},
+			#{userPassword},
+			#{userName},
+			#{userTel},
+			0,
+			SYSDATE,
+			#{userId},
+			SYSDATE,
+			#{userId},
+			#{userEmail},
+			#{userGen},
+			#{userDate}
+		)
+	</insert>
+	
+	<update id="updatePwInfo" parameterType="UserDTO">
+		UPDATE
+			USER_INFO
+		SET
+			USERPASSWORD = #{userPassword}
+		WHERE
+			USERID = #{userId}
+	</update>
+	<select id="getLogin" parameterType="UserDTO" resultType="UserDTO">
+		SELECT
+			USERNAME as userName,
+			USERID as userId,
+			USER_RIGHTS as user_Rights
+		FROM
+			USER_INFO
+		WHERE
+			USERID = #{userId} AND USERPASSWORD = #{userPassword}
+	</select>
+	
+	<select id="getIdInfo" parameterType="UserDTO" resultType="UserDTO">
+		SELECT
+			USERID as userId
+		FROM
+			USER_INFO
+		WHERE
+			USERNAME = #{userName} AND USERDATE = #{userDate} AND USEREMAIL = #{userEmail}
+	</select>
+
+	<select id="getPwInfo" parameterType="UserDTO" resultType="UserDTO">
+		SELECT
+			USERPASSWORD as userPassword <!-- 컬럼 별칭을 UserDTO의 변수명과 맞춰주었음 -->
+		FROM
+			USER_INFO
+		WHERE
+			USERNAME = #{userName}
+			AND USERDATE = #{userDate}
+			AND USERID = #{userId}
+			AND USEREMAIL = #{userEmail}
+	</select>
+	
+</mapper>

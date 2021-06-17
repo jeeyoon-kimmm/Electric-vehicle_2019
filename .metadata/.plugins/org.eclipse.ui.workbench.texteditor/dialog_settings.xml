@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="method"/>
+			<item value="BoardFilter"/>
+			<item value="없음"/>
+			<item value="userComment"/>
+			<item value="userBoard"/>
+			<item value="/mypage/userBoard"/>
+			<item value="bDTO"/>
+			<item value="nDTO"/>
+			<item value="B_CommentFilter"/>
+			<item value="글쓰기"/>
+			<item value="getMPageInfo"/>
+			<item value="rList&apos;"/>
+			<item value="rList"/>
+			<item value="목록"/>
+			<item value="NoticeFilter"/>
+		</list>
+		<list key="replacehistory">
+			<item value="cDTO"/>
+			<item value="bDTO"/>
+			<item value="bList"/>
+			<item value="No_seq"/>
+			<item value="no_seq"/>
+			<item value="Com_seq"/>
+			<item value="NO_SEQ"/>
+			<item value="com_seq"/>
+			<item value="B_CommentDTO"/>
+			<item value="c_seq"/>
+			<item value="closed_day"/>
+			<item value="&quot;/board/vendor"/>
+			<item value="&quot;/board/css"/>
+			<item value="Board"/>
+			<item value="board"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="356" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="433" key="DIALOG_HEIGHT"/>
+		<item value="53" key="DIALOG_X_ORIGIN"/>
+		<item value="226" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

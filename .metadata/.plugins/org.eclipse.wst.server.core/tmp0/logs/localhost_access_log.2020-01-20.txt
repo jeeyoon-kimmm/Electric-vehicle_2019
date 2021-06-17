@@ -1,0 +1,15 @@
+127.0.0.1 - - [20/Jan/2020:13:01:31 +0900] "GET / HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:15 +0900] "GET /notice/noticeWrite.do HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/llogin.do HTTP/1.1" 200 6216
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/js/require.min.js HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/plugins/charts-c3/plugin.js HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/js/dashboard.js HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/plugins/charts-c3/plugin.css HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /css/dashboard.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/plugins/input-mask/plugin.js HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/brand/tabler.svg HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/js/dashboard.js HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/plugins/charts-c3/plugin.css HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/plugins/charts-c3/plugin.js HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/assets/plugins/input-mask/plugin.js HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2020:13:02:16 +0900] "GET /main/favicon.ico HTTP/1.1" 404 -
